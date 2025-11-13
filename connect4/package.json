@@ -1,0 +1,23 @@
+{
+  "name": "connect4-electron",
+  "version": "1.0.0",
+  "description": "Connect 4 game built with Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.yourname.connect4",
+    "productName": "Connect4",
+    "win": {
+      "target": "nsis"      
+    }    
+  }
+}
