@@ -1,6 +1,6 @@
 {
-  "name": "minesweeper",
-  "productName": "minesweeper",
+  "name": "snake",
+  "productName": "snake",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",

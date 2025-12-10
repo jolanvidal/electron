@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;    
+    background-color: #4b0f0f;
+    color: white;
+    padding: 10px;
+    -webkit-app-region: drag; /* Allow dragging the window */
+}
+
+.navbar .nav-right {
+    display: flex;
+    gap: 20px;
+}
