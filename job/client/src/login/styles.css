@@ -1,0 +1,112 @@
+/* GENERAL PAGE */
+body {
+    background: linear-gradient(135deg, #33062d, #300101);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* MAIN CARD */
+.main {
+    background: white;
+    padding: 40px;
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TITLES */
+.main h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.main h2 {
+    color: #666;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* ROLE BUTTONS */
+.role-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.role-buttons button {
+    width: 48%;
+    padding: 10px;
+    background: #eee;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.role-buttons button:hover {
+    background: #440e12;
+    color: white;
+}
+
+/* INPUT SECTION */
+.input {
+    text-align: left;
+}
+
+.input label {
+    font-size: 14px;
+    color: #444;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    transition: 0.2s;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0px 0px 4px rgba(37, 117, 252, 0.4);
+}
+
+/* LOGIN BUTTON */
+#btn_login {
+    width: 100%;
+    padding: 12px;
+    background: #29174b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn_login:hover {
+    background: #6a11cb;
+}
+
+.active-role {
+    background: #29174b !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(37, 117, 252, 0.4);
+}

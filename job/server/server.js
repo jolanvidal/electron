@@ -16,6 +16,9 @@ app.use('/employees', employeesRouter);
 const employersRouter = require('./routes/employers');
 app.use('/employers', employersRouter);
 
+const adminsRouter = require('./routes/admins');
+app.use('/admins', adminsRouter);
+
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });

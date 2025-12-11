@@ -16,12 +16,28 @@ router.get('/:id', getEmployer, (req, res) => {
   res.send(res.employer);
 });
 
+// Login
+router.post('/login', async (req, res) => {
+  const { username, password } = req.body;
+  try {
+    const employer = await Employer.findOne({ username, password });
+    if (!employer) {
+      return res.status(401).json({ success: false, message: 'Invalid credentials' });
+    }
+    res.json({ success: true, employer });
+  } catch (err) {
+    res.status(500).json({ success: false, message: err.message });
+  }
+});
+
 // Create
 router.post('/', async (req, res) => {
   const employer = new Employer({
     name: req.body.name,
     age: req.body.age,
-    jobName: req.body.jobName    
+    username: req.body.username,
+    password: req.body.password,
+    email: req.body.email   
   });
     try {
         const newEmployer = await employer.save();

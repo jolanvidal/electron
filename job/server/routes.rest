@@ -20,7 +20,7 @@ POST http://localhost:3000/employees/login
 Content-Type: application/json
 
 {
-  "username":"johndoe",
+  "username":"zx",
   "password":"password123"
 }
 
@@ -31,10 +31,9 @@ Content-Type: application/json
 
 {
   "name":"John Doe",
-  "age":30,
-  "salary":50000,
+  "age":30,  
   "email":"john.doe@example.com",
-  "username":"johndoe",
+  "username":"zx",
   "password":"password123"
 }
 
@@ -75,14 +74,28 @@ GET http://localhost:3000/employers
 
 GET http://localhost:3000/employers/6939e635f027f3a28a8b041a
 
+
+
+### LOGIN AN EMPLOYER
+
+POST http://localhost:3000/employers/login
+Content-Type: application/json
+
+{
+  "username":"sdad",
+  "password":"password123"
+}
+
 ### CREATE AN EMPLOYER
 POST http://localhost:3000/employers
 Content-Type: application/json
 
 {
-  "name":"Abdul CADADrp",
-  "age":45,
-  "jobName":"Bob the Builder"
+  "name":"John Doe",
+  "age":30,  
+  "email":"john.doe@example.com",
+  "username":"sdad",
+  "password":"password123"
 }
 
 ### UPDATE AN EMPLOYER
@@ -104,3 +117,30 @@ DELETE http://localhost:3000/employers
 
 DELETE http://localhost:3000/employers/6939fbc711b3674a4f3de4f4
 
+##########################
+
+### ADMINS 
+
+##########################
+
+
+### CREATE AN ADMIN
+
+POST http://localhost:3000/admins
+Content-Type: application/json
+
+{
+  
+  "username":"admin",
+  "password":"admin"
+}
+
+### LOGIN AN ADMIN
+
+POST http://localhost:3000/admins/login
+Content-Type: application/json
+
+{
+  "username":"admin",
+  "password":"admin"
+}
