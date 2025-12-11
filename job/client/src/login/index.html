@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workjob</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Workjob</h1>
+        
+        <h2>Login</h2>
+
+        <div class="role-buttons">
+            <button id="btn_employee" onclick="selectRole('employee')">Employee</button>
+            <button id="btn_employer" onclick="selectRole('employer')">Employer</button>
+        </div>
+
+        <div class="input">
+            <label>Username</label>
+            <input type="text" id="username"/>
+
+            <label>Password</label>
+            <input type="password" id="password"/>
+
+            <button id="btn_login" onclick="login()">Login</button>
+        </div>  
+    </div>
+
+
+    <script src="renderer.js"></script>
+</body>
+</html>

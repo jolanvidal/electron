@@ -1,0 +1,106 @@
+################################
+
+### EMPLOYEES ROUTES TESTS
+
+################################
+
+
+
+### GET ALL EMPLOYEES
+
+GET http://localhost:3000/employees
+
+### GET ONE EMPLOYEE
+
+GET http://localhost:3000/employees/6939e320cceb826e02774c64
+
+### LOGIN AN EMPLOYEE
+
+POST http://localhost:3000/employees/login
+Content-Type: application/json
+
+{
+  "username":"johndoe",
+  "password":"password123"
+}
+
+###  CREATE AN EMPLOYEE
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+  "name":"John Doe",
+  "age":30,
+  "salary":50000,
+  "email":"john.doe@example.com",
+  "username":"johndoe",
+  "password":"password123"
+}
+
+### UPDATE AN EMPLOYEE
+
+PATCH http://localhost:3000/employees/6939e320cceb826e02774c64
+Content-Type: application/json
+
+{
+  "age": 8888,
+  "salary": 99999
+}
+
+### DELETE AN EMPLOYEE
+
+DELETE http://localhost:3000/employees/6939e320cceb826e02774c64
+
+### DELETE ALL EMPLOYEES
+
+DELETE http://localhost:3000/employees
+
+
+
+################################
+
+### EMPLOYERS ROUTES TESTS
+
+################################
+
+
+
+
+### GET ALL EMPLOYERS
+GET http://localhost:3000/employers
+
+
+### GET ONE EMPLOYER
+
+GET http://localhost:3000/employers/6939e635f027f3a28a8b041a
+
+### CREATE AN EMPLOYER
+POST http://localhost:3000/employers
+Content-Type: application/json
+
+{
+  "name":"Abdul CADADrp",
+  "age":45,
+  "jobName":"Bob the Builder"
+}
+
+### UPDATE AN EMPLOYER
+
+PATCH http://localhost:3000/employers/6939fbc711b3674a4f3de4f4
+Content-Type: application/json
+
+{
+    "name":"CACA",
+    "age":15,
+    "jobName":"Senior Software Engineer"
+}
+
+### DELETE ALL EMPLOYERS
+
+DELETE http://localhost:3000/employers
+
+### DELETE AN EMPLOYER
+
+DELETE http://localhost:3000/employers/6939fbc711b3674a4f3de4f4
+
